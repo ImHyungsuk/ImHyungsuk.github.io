@@ -1,8 +1,43 @@
 <!doctype html>
-<html lang="en">
-  <title>W3.CSS 50/50 Template</title>
+<html lang="ko">
+  <meta charset="UTF-8" />
+  <title>임형석 | 백엔드 개발자 포트폴리오</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <style>
+    .resume-title {
+      font-weight: bold;
+      margin: 32px 0 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .resume-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 4px 16px;
+      padding: 6px 0;
+    }
+    .resume-date {
+      opacity: 0.7;
+      white-space: nowrap;
+    }
+    .stack-row {
+      margin-bottom: 20px;
+    }
+    .stack-title {
+      font-weight: bold;
+      margin: 0 0 8px;
+    }
+    .stack-tag {
+      display: inline-block;
+      margin: 0 6px 8px 0;
+      padding: 4px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 16px;
+      font-size: 14px;
+    }
+  </style>
 
   <body class="w3-content" style="max-width: 1300px">
     <!-- First Grid: Logo & About -->
@@ -30,6 +65,11 @@
             href="#resume"
             class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16"
             >Resume</a
+          >
+          <a
+            href="#stack"
+            class="w3-button w3-black w3-block w3-hover-indigo w3-padding-16"
+            >Tech Stack</a
           >
           <a
             href="#contact"
@@ -61,19 +101,14 @@
               테스트를 통해 문제를 검증하고 해결합니다. <br />
               '상담관리 플랫폼'프로젝트에서 번호표 시스템을 개발하며 낙관적 락을
               활용한 동시성 처리로 데이터 정합성 문제를 해결하였습니다. <br />
-              '가족금융 플랫폼' 프로젝트에서는 팀원들과 문제를 공유하고, 함꼐
+              '가족금융 플랫폼' 프로젝트에서는 팀원들과 문제를 공유하고, 함께
               해결해나가는 협업 태도를 배웠습니다.
             </p>
             <p>
-              html,css,js를 활용하여 투두리스트, 과일 쇼핑물, 은행, 영화구매
+              html,css,js를 활용하여 투두리스트, 과일 쇼핑몰, 은행, 영화구매
               사이트를 제작했습니다. <br />
               프로젝트의 결과물은 My Work에서 확인할 수 있습니다.
             </p>
-          </div>
-          <div
-            style="display: flex; flex-direction: column; align-items: center"
-          >
-            Java | Spring Boot | MySQL
           </div>
         </div>
       </div>
@@ -142,113 +177,112 @@
             style="width: 100%"
           /> -->
         </div>
-
-        <br />
-        <p>Just call me awesome.</p>
       </div>
 
       <div class="w3-indigo w3-container" style="min-height: 800px" id="resume">
         <div class="w3-padding-64 w3-center">
           <h2>Resume</h2>
-          <p>A draft from my CV</p>
+          <div class="w3-container w3-left-align">
+            <h4 class="resume-title">학력</h4>
+            <div class="resume-item">
+              <span><b>동국대학교</b> - 정보통신공학전공 졸업 - 3.73 / 4.5</span>
+              <span class="resume-date">2020.03 - 2026.02</span>
+            </div>
+            <div class="resume-item">
+              <span><b>동탄중앙고등학교</b> - 졸업</span>
+              <span class="resume-date">2017.03 - 2020.01</span>
+            </div>
 
-          <div class="w3-container w3-responsive">
-            <table class="w3-table">
-              <tr>
-                <th>Year</th>
-                <th>Title</th>
-                <th>Where</th>
-              </tr>
+            <h4 class="resume-title">사회활동</h4>
+            <div class="resume-item">
+              <span><b>SOPT</b> - 안드로이드 파트 YB</span>
+              <span class="resume-date">2025.03 - 2025.07</span>
+            </div>
+            <div class="resume-item">
+              <span><b>디지털하나로</b> - 하나은행</span>
+              <span class="resume-date">2024.08 - 2025.02</span>
+            </div>
 
-              <tr class="w3-white">
-                <td>2012-2016</td>
-                <td>The rest is history..</td>
-                <td>Lorem ipsum</td>
-              </tr>
+            <h4 class="resume-title">어학</h4>
+            <div class="resume-item">
+              <span><b>TOEIC</b> - 855 - 한국토익위원회</span>
+              <span class="resume-date">2026.06</span>
+            </div>
+            <div class="resume-item">
+              <span><b>TOEIC Speaking</b> - IH(150) - ETS</span>
+              <span class="resume-date">2025.06</span>
+            </div>
 
-              <tr>
-                <td>2009-2012</td>
-                <td>Started my own company</td>
-                <td>My Garage</td>
-              </tr>
+            <h4 class="resume-title">자격증</h4>
+            <div class="resume-item">
+              <span><b>SQLD</b> - 한국데이터산업진흥원</span>
+              <span class="resume-date">2025.12</span>
+            </div>
+            <div class="resume-item">
+              <span><b>정보처리기사</b> - 한국산업인력공단</span>
+              <span class="resume-date">2024.06</span>
+            </div>
 
-              <tr class="w3-white">
-                <td>2008-2009</td>
-                <td>Started working for Lorem</td>
-                <td>London, UK</td>
-              </tr>
-
-              <tr>
-                <td>2005-2008</td>
-                <td>Degree in Bachelor of Design</td>
-                <td>Harvard, USA</td>
-              </tr>
-
-              <tr class="w3-white">
-                <td>2002-2005</td>
-                <td>Degree in Bachelor of Business</td>
-                <td>RMIT University, Melbourne, Australia</td>
-              </tr>
-
-              <tr class="w3-hide-medium">
-                <td>2002-2005</td>
-                <td>Degree in Bachelor of Business</td>
-                <td>RMIT University, Melbourne, Australia</td>
-              </tr>
-            </table>
+            <h4 class="resume-title">수상</h4>
+            <div class="resume-item">
+              <span><b>한이음 ICT 멘토링 공모전</b> - 입선 - 한국정보산업연합회</span>
+              <span class="resume-date">2024.12</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Third Grid: Swing By & Contact -->
+    <!-- Third Grid: Tech Stack & Contact -->
     <div
       class="w3-grid"
-      id="contact"
       style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
     >
-      <div class="w3-dark-grey w3-container w3-center" style="height: 700px">
+      <div class="w3-teal w3-container" style="min-height: 700px" id="stack">
         <div class="w3-padding-64">
-          <h1>Swing By</h1>
-        </div>
+          <h1 class="w3-center">Tech Stack</h1>
 
-        <div class="w3-padding-64">
-          <p>..for a cup of coffee, or whatever.</p>
-          <p>Chicago, US</p>
-          <p>+00 1515151515</p>
-          <p>test@test.com</p>
+          <div class="w3-padding-large">
+            <div class="stack-row">
+              <h5 class="stack-title">Backend</h5>
+              <span class="stack-tag">Java</span>
+              <span class="stack-tag">Spring Boot</span>
+            </div>
+            <div class="stack-row">
+              <h5 class="stack-title">Database</h5>
+              <span class="stack-tag">MySQL</span>
+            </div>
+            <div class="stack-row">
+              <h5 class="stack-title">DevOps</h5>
+              <span class="stack-tag">AWS</span>
+              <span class="stack-tag">Docker</span>
+              <span class="stack-tag">GitHub Actions</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="w3-teal w3-container" style="height: 700px">
-        <div class="w3-padding-64 w3-padding-large">
+      <div
+        class="w3-dark-grey w3-container w3-center"
+        style="min-height: 700px"
+        id="contact"
+      >
+        <div class="w3-padding-64">
           <h1>Contact</h1>
-          <p class="w3-opacity">GET IN TOUCH</p>
+        </div>
 
-          <form
-            class="w3-container w3-card w3-padding-32 w3-white"
-            action="/action_page.php"
-            target="_blank"
-          >
-            <div class="w3-section">
-              <label>Name</label>
-              <input class="w3-input" type="text" required name="Name" />
-            </div>
-
-            <div class="w3-section">
-              <label>Email</label>
-              <input class="w3-input" type="email" required name="Email" />
-            </div>
-
-            <div class="w3-section">
-              <label>Message</label>
-              <input class="w3-input" type="text" required name="Message" />
-            </div>
-
-            <button type="submit" class="w3-button w3-teal w3-right">
-              Send
-            </button>
-          </form>
+        <div class="w3-padding-64">
+          <p>📞 010-4087-6824</p>
+          <p>
+            ✉️
+            <a href="mailto:limhs8630@gmail.com">limhs8630@gmail.com</a>
+          </p>
+          <p>
+            🐙
+            <a href="https://github.com/ImHyungsuk" target="_blank"
+              >github.com/ImHyungsuk</a
+            >
+          </p>
         </div>
       </div>
     </div>
